@@ -8,3 +8,6 @@ body{
 .linkStyle{
     @apply text-sm font-medium hover:underline hover:underline-offset-4
 }
+.dispItems{
+    @apply flex items-end content-center  flex-wrap gap-5 
+}

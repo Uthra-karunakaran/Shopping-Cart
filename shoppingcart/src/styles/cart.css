@@ -1,0 +1,16 @@
+.cart{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+.item{
+    max-width: 550px;
+}
+.itemDetail {
+    display: flex;
+    flex-direction: row;
+    /* gap: 10px; */
+    width: 330px;
+    justify-content: space-between;
+}

@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom';
+
 import ProductCard from "./ProductCard"
 
 export default function Render(items){
@@ -14,7 +13,7 @@ export default function Render(items){
                 image:item["image"],
                 title: item["title"],
                 description: item["description"],
-                formattedPrice: `${item["price"]}`,
+                formattedPrice: `$${item["price"]}`,
                 id:item["id"]
               };
               

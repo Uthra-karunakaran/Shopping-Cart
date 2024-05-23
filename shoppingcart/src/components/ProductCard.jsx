@@ -1,14 +1,15 @@
 
 import React from "react";
 import "../styles/ProductCard.css";
-
+import { Link } from 'react-router-dom';
 const ProductCard = (props) => {
-  const { image, description, title, formattedPrice } = props;
-//<p className="product-card__description">{description}</p>
+  const {id, image, description, title, formattedPrice } = props;
+  //<p className="product-card__description">{description}</p>
+ 
   return (
     <div className="product-card">
       <img className="product-card__image" src={image} />
-      <p className="product-card__title">{title}</p>
+      <Link to={`/shop/item/${id}`} className="product-card__title linkStyle">{title}</Link>
       <p className="product-card__price">{formattedPrice}</p>
       <button className="product-card__btn-wishlist">
         <svg viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
