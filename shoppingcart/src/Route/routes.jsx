@@ -2,6 +2,7 @@ import Shop from "../components/Shop";
 import Layout from "../components/Layout";
 import Cart from "../components/cartComponents/Cart";
 import Home from "../components/Home";
+import Notfound from "../components/Notfound"
 import All from "../components/category/All";
 import Electronics from "../components/category/Electronics";
 import Jewellery from "../components/category/Jewellery";
@@ -31,6 +32,10 @@ let routes=[
             path:"cart",
             element:<Cart/>
         },
+        {
+            path:"*",
+            element:<Notfound/>
+        }
         
     ]
     },

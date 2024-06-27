@@ -10,7 +10,6 @@
 .itemDetail {
     display: flex;
     flex-direction: row;
-    /* gap: 10px; */
     width: 330px;
     justify-content: space-between;
 }

@@ -19,9 +19,9 @@ export default function CheckoutForm(props) {
       };
   return (
     <div className="max-w-lg flex" style={divheight}>
-      <div className="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-8 w-full max-w-md">
+      <div className="bg-white dark:bg-gray-900 cart_shadow  rounded-lg p-8 w-full max-w-md">
         <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">Checkout</h2>
-        <form className="space-y-4" onSubmit={handleSubmit}>
+        <form className="" onSubmit={handleSubmit}>
           <div>
             <label className="block text-gray-700 dark:text-gray-400 font-medium mb-2" htmlFor="username">
               Username
@@ -45,7 +45,7 @@ export default function CheckoutForm(props) {
             />
           </div>
           <div>
-                <p>${total}</p>
+          <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200 mt-4">${total}</h2>
             </div>
           <button
             className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"

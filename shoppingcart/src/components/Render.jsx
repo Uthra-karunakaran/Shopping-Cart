@@ -7,6 +7,8 @@ export default function Render(items){
     let data=items["items"];
     
     let cards=[]
+    console.log(items)
+    console.log(data)
     data.map((item)=>{
                
             const productInfo = {
@@ -28,5 +30,5 @@ export default function Render(items){
         </>
     );
     
-    // <ProductCard {...productInfo} />
+    
 }

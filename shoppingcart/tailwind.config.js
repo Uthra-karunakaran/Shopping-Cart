@@ -8,7 +8,12 @@ module.exports = {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        'cartItemWidth': "36.563rem",
+        'mdLogow': '135px', 
+      }
+    },
   },
   plugins: [require('flowbite/plugin')],
   darkMode: "class",
